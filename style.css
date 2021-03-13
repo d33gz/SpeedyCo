@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: gold;
+}
+
+.red {
+    color: red;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+#header {
+    border-bottom: solid thick red;
+}
+
+#main {
+    width: 30%;
+    margin: auto;
+}
