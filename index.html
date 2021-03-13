@@ -29,7 +29,10 @@
         duis tristique sollicitudin nibh sit. Ultricies leo integer malesuada nunc vel risus commodo. Vulputate dignissim suspendisse in est ante in nibh mauris.</p>
     </div>
 
-    <form action="mailto:sdhdh2@gmail.com" method="POST" enctype="multipart/form-data" name="email">
+    
+    <!-- Commented out while refactoring to .php -->
+
+    <!-- <form action="mailto:sdhdh2@gmail.com" method="POST" enctype="multipart/form-data" name="email">
       <label for="contact-name">Your Name</label><br>
         <input type="text" name="contact-name"><br><br>
 
@@ -37,8 +40,38 @@
         <textarea id="contact-form" name="contact-form" rows=10 cols=50></textarea><br><br>
       
       <input type="submit" value="Contact Us!">
-    </form>
+    </form> -->
 
+
+    <?php
+    if (!isset($_POST["submit])) { ?>
+
+      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        Message: <textarea rows="10" cols="20" name="message"></textarea><br>
+        <input type="submit" name="submit" value="Send Email">
+      </form>
+    <?php
+    } else {
+
+
+      <!-- WHEN THIS RUNS IT ONLY RESULTS IN A 405 (NOT ALLOWED ACCESS ERROR) -->
+
+      <!-- if (isset($_POST["to_email"])) {
+        $to_email = $_POST["sdhdh2@gmail.com"];
+        $from_email = $_POST["hendo1349@gmail.com"];
+        $subject = $_POST["Test Message via SpeedyCo"];
+        $body = $_POST["message"];
+
+        if (mail($to_email, $subject, $body, $headers)) {
+            echo("Email succes to $to_email...");
+        } else {
+            echo("Email send fail...");
+        }
+      } -->
+
+    }
+    ?>
+    
   </body>
 
   <script type="php" src="./sendEmail.php"></script>
