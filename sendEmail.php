@@ -1,4 +1,7 @@
-<?php
+#This is all commented out right now
+//Don't believe me?
+
+/* <?php
     $to_email = "sdhdh2@gmail.com";
     $subject = "Test Email Via PHP";
     $body = "Yo! First time using PHP Scripting to do anything... in this case, it's sending an email :)";
@@ -9,4 +12,4 @@
     }   else {
         echo("Email sending failed...");
     }
-?>
+?> */
