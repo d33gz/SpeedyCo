@@ -29,12 +29,18 @@
         duis tristique sollicitudin nibh sit. Ultricies leo integer malesuada nunc vel risus commodo. Vulputate dignissim suspendisse in est ante in nibh mauris.</p>
     </div>
 
-    <form>
-      <label for="contact-form">Contact Us</label><br><br>
-      <textarea id="contact-form" name="contact-form" rows=10 cols=50></textarea><br><br>
-      <button type="submit">Submit</button>
+    <form action="mailto:sdhdh2@gmail.com" method="POST" enctype="multipart/form-data" name="email">
+      <label for="contact-name">Your Name</label><br>
+        <input type="text" name="contact-name"><br><br>
+
+      <label for="contact-form">Your Message</label><br>
+        <textarea id="contact-form" name="contact-form" rows=10 cols=50></textarea><br><br>
+      
+      <input type="submit" value="Contact Us!">
     </form>
 
   </body>
+
+  <script type="php" src="./sendEmail.php"></script>
 
 </html>
