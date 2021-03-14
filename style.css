@@ -1,3 +1,7 @@
+header {
+    border-bottom: solid thick red;
+}
+
 body {
     background-color: black;
     text-align: center;
@@ -14,10 +18,6 @@ body {
 
 h1 {
     font-size: 48px;
-}
-
-#header {
-    border-bottom: solid thick red;
 }
 
 #main {
