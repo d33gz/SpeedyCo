@@ -10,68 +10,30 @@
   </head>
   
   <body>
-
     <header>
       <h1><span class="red italic">Speedy</span>Co</h1>
     </header>
-
-    <div id="sub-heading">
-      <h2>Felis donec et odio pellentesque</h2>
-    </div>
-
-    <img src="./images/computer-station.png" alt="A Computer Station">
-
-    <div id="main">
-      <p>Tristique senectus et netus et malesuada fames ac turpis. Aliquet risus feugiat in ante metus. Semper quis lectus nulla at volutpat diam ut venenatis. 
-        Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Ut tortor pretium viverra suspendisse potenti. Purus sit amet volutpat consequat mauris nunc 
-        congue nisi vitae. Aliquam vestibulum morbi blandit cursus risus at. Dignissim cras tincidunt lobortis feugiat vivamus at. Ut tellus elementum sagittis 
-        vitae et leo. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Elit 
-        duis tristique sollicitudin nibh sit. Ultricies leo integer malesuada nunc vel risus commodo. Vulputate dignissim suspendisse in est ante in nibh mauris.</p>
-    </div>
-
-    
-    <!-- Commented out while refactoring to .php -->
-
-    <!-- <form action="mailto:sdhdh2@gmail.com" method="POST" enctype="multipart/form-data" name="email">
-      <label for="contact-name">Your Name</label><br>
-        <input type="text" name="contact-name"><br><br>
-
-      <label for="contact-form">Your Message</label><br>
+    <article>
+      <aside id="sub-heading">
+        <h2>Felis donec et odio pellentesque</h2>
+      </aside>
+      <img src="./images/computer-station.png" alt="A Computer Station">
+      <section>
+        <p>Tristique senectus et netus et malesuada fames ac turpis. Aliquet risus feugiat in ante metus. Semper quis lectus nulla at volutpat diam ut venenatis. 
+          Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Ut tortor pretium viverra suspendisse potenti. Purus sit amet volutpat consequat mauris nunc 
+          congue nisi vitae. Aliquam vestibulum morbi blandit cursus risus at. Dignissim cras tincidunt lobortis feugiat vivamus at. Ut tellus elementum sagittis 
+          vitae et leo. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.</p>
+      </section>
+      <form action="mailto:sdhdh2@gmail.com" method="POST" enctype="multipart/form-data" name="email">
+        <label for="contact-name">Your Name</label><br>
+          <input type="text" name="contact-name"><br><br>
+        <label for="contact-form">Your Message</label><br>
         <textarea id="contact-form" name="contact-form" rows=10 cols=50></textarea><br><br>
-      
-      <input type="submit" value="Contact Us!">
-    </form> -->
-
-
-    <?php
-    if (!isset($_POST["submit])) { ?>
-
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-        Message: <textarea rows="10" cols="20" name="message"></textarea><br>
-        <input type="submit" name="submit" value="Send Email">
+        <input type="submit" value="Contact Us!">
       </form>
-    <!-- WHEN THIS RUNS IT ONLY RESULTS IN A 405 (NOT ALLOWED ACCESS ERROR) -->
-    <!-- <?php
-    } 
-    else {
-
-      if (isset($_POST["to_email"])) {
-        $to_email = $_POST["sdhdh2@gmail.com"];
-        $from_email = $_POST["hendo1349@gmail.com"];
-        $subject = $_POST["Test Message via SpeedyCo"];
-        $body = $_POST["message"];
-
-        if (mail($to_email, $subject, $body, $headers)) {
-            echo("Email succes to $to_email...");
-        } else {
-            echo("Email send fail...");
-        }
-      }
-    }
-    ?> -->
-  
-    <!-- <script type="php" src="./sendEmail.php"></script> -->
-
+    </article>
+    <footer>
+      @Hend0
+    </footer>
   </body>
-
 </html>

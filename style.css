@@ -1,11 +1,9 @@
-#header {
-    border-bottom: solid thick red;
-}
-
 body {
     background-color: black;
     text-align: center;
     color: gold;
+    display: flex;
+    flex-direction: column;
 }
 
 .red {
@@ -20,7 +18,16 @@ h1 {
     font-size: 48px;
 }
 
-#main {
+header {
+    height: 15vh;
+    border-bottom: solid thick red;
+}
+
+article {
     width: 30%;
     margin: auto;
+}
+
+footer {
+    height: 10vh;
 }
